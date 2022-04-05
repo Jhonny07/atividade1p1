@@ -1,9 +1,10 @@
 public class Funcionario{
+
     private String nome;
     private String cpf;
-    private Double salario;
+    private double salario;
     private String departamento;
-
+    
     public String getNome() {
         return nome;
     }
@@ -27,14 +28,17 @@ public class Funcionario{
     }
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
+
     } 
+     
 
     public double Bonificacao(){
         double bonus = getSalario()*10/100;
-        double total = getSalario()+ bonus;
-        return bonus;
+        double total = getSalario() + bonus;
+        return total; 
     }
+    
 
     
-    
+
 }
